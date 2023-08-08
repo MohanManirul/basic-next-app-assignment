@@ -1,0 +1,44 @@
+app directory : This is root directory & default routing start from here. all files and folder for project expansion keeps here.
+			all sub folders i.e sub route or nested root forms here. In this folder React error boundary i.e "error.js" , "not-found.js" , 
+			React suspense boundary "loading.js" global css files beautify the project & give a professional flavour.
+
+global.css : Stores the css for the project which is call from anywhere of this project. 
+
+layout.js : This is the main entry point of nextjs project. All the initial requirement like css, extra dependencies which are needed for 
+			entire project are loaded here to load one time.
+
+page.js : This is the home page for default nextjs project.
+
+page.module.css : for module wise css deployment it needed . same class name could be define for different module.
+
+public directory : Next.js can serve static files, like images,audio,video under a folder called public in the root directory.
+
+next-config.js : Most important file of next js . Project's strict mood can be enables/disable from this file. Confidential environmental credentials ,
+				application's base path , sub domain functinality , api url, request headers, cache functionality , powered by hidden , .next folder 
+				name customization manages here.
+
+package.json : Stores script's command and installed packages information.
+
+package-lock.json : is used to lock down the dependencies for a project so that all developers working on the project 
+					use the same versions of the dependencies.
+
+.next directory : When application runs this directory created. Also creat when build the projects . Keeps all minified chunk files of html, css, js, jsx, this project .
+					By managing  next.config.js this name could be build. These chunk files are optimized production build files make project faster.
+
+.gitignore : decides which files or folders uploads to github.
+
+
+jsconfig.json : specifies the root files and the options for the features provided by the JavaScript language service
+
+node_modules : contains all the React dependencies packages: react , react-dom , and their transitive dependencies like webpack , babal , rxjs , ESLint , etc., to build and run a React project
+
+
+
+
+
+
+
+
+ 
+		 
+		 
