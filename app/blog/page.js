@@ -1,10 +1,10 @@
+import Link from "next/link";
 import getAllPost from "../lib/getAllPost"
-import { Link } from 'next/link';
 
 
 export default async function Blog(){
     const posts = await getAllPost();
- 
+    console.log(posts);
     return(
         <div className="blogContent">
             <section>
@@ -13,10 +13,12 @@ export default async function Blog(){
                     {
                       posts.map((post,index) =>
                         (
+                           <Link key={index} href={`/blog/${post.id}`}>
+                                                        
+                              <p>{post.id} - {post.title }</p>  
+                               
+                           </Link>
                             
-                            <p key={index}>                              
-                               {post.id} - {post.title }
-                            </p>
                                                       
                         )
                     )  
