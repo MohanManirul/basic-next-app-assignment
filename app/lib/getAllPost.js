@@ -4,7 +4,6 @@ export default async function getAllPost(){
     if(!res.ok){
         throw new Error('Error fetching posts');
     }
-    const data = await res.json()
-    console.log(data);
+
     return await res.json();
 }

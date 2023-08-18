@@ -14,8 +14,8 @@ export default async function Blog(){
                       posts.map((post,index) =>
                         (
                             
-                            <p key={index}>
-                               <Link href={`/blog/${post.id}`} > {post.id} - {post.title } </Link>
+                            <p key={index}>                              
+                               {post.id} - {post.title }
                             </p>
                                                       
                         )
