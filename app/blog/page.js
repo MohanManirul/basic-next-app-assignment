@@ -12,7 +12,7 @@ export default async function Blog(){
                 <div className="mt-4">
                     {
                       posts.map((post,index) =>
-                        (
+                        ( 
                            <Link key={index} href={`/blog/${post.id}`}>
                                                         
                               <p>{post.id} - {post.title }</p>  
